@@ -1,25 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import UserInput from './components/UserInput';
+import JokeList from './components/JokeList';
+//import ReactHooks from './components/ReactHooks';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <h2 className="text-center mt-3">Chuck Norris Jokes Displayer</h2>
+      <div className="container">
+        <UserInput />
+        <JokeList />
+        {/* <ReactHooks /> */}
+      </div>
+    </>
   );
-}
+};
 
 export default App;
